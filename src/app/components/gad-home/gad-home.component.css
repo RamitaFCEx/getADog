@@ -1,0 +1,26 @@
+div.home-container{
+    margin: 0;
+    padding: 1% 4%;
+}
+
+div.home-container div#carouselExampleCaptions{
+    padding: 3px;
+    border: 3px solid gold;
+}
+
+div.home-container img{
+    max-height: 85vh;
+}
+
+div.carousel-item div.carousel-caption{
+    background-color: rgba(192, 192, 192, 0.6);
+}
+
+
+
+
+
+
+
+
+

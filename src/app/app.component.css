@@ -1,0 +1,27 @@
+#logoGetADog{
+    height: 4vh;
+    margin-right: 8px;
+}
+
+#logoGetADog img{
+    height: 100%;
+    object-fit: cover;
+}
+ 
+footer{
+    text-align: center;
+    background-color: rgb(226, 226, 226);
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+footer img{
+    height: 3vh;
+    margin-right: 5px;
+}
+
+div.display{
+    min-height: 90vh;
+}
+
