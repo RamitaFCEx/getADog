@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CartServiceService } from 'src/app/services/cart-service.service';
+import { CartServiceService } from '../../services/cart-service.service';
 import { perro } from './perro';
 @Component({
   selector: 'gad-shop-table',
