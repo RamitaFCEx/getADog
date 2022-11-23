@@ -1,0 +1,32 @@
+
+<table class="table table-striped table-dark table-bordered">
+    <thead>
+        <tr>
+            <td>Imagen</td>
+            <td>Nombre</td>
+            <td>Edad</td>
+            <td>AptoDepto</td>
+            <td>Disponible</td>
+            <td>Agregar</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let perro of perros">
+            <td><img class="perroDisp img-thumbnail" src={{perro.imagen}} alt="perro"></td>
+            <td>{{perro.nombre}}</td>
+            <td>{{perro.edad}}</td>
+            <td>
+                <span class="badge text-bg-success" *ngIf="perro.aptoDepto">Si!</span>
+                <span class="badge text-bg-warning" *ngIf="!perro.aptoDepto">No :(</span>
+            </td>
+            <td>
+                <span class="badge text-bg-success" *ngIf="perro.disponibilidad">Disponible</span>
+                <span class="badge text-bg-danger" *ngIf="!perro.disponibilidad">No disp</span>
+            </td>
+            <td>
+                <input type="checkbox" name="" id="" (click)="cambiarDisponibilidad(perro)" >
+            </td> 
+        </tr>
+    </tbody>
+</table>
+    

@@ -1,0 +1,21 @@
+<table>
+    <thead>
+        <tr>
+            <td>Imagen</td>
+            <td>Nombre</td>
+            <td>Edad</td>
+            <td>AptoDepto</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let perro of perros">
+            <td><img class="perroDisp img-thumbnail" src={{perro.imagen}} alt="perro"></td>
+            <td>{{perro.nombre}}</td>
+            <td>{{perro.edad}}</td>
+            <td>
+                <span class="badge text-bg-success" *ngIf="perro.aptoDepto">Si!</span>
+                <span class="badge text-bg-warning" *ngIf="!perro.aptoDepto">No :(</span>
+            </td>
+        </tr>
+    </tbody>
+</table>

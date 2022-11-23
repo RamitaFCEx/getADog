@@ -1,22 +1,8 @@
 <div class="home-container">
-  
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" *ngIf="imagenes.length > 1">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner" >
-          <!-- Directiva ngFor --><!-- Directiva ngFor --><!-- Directiva ngFor -->
-          <!-- <div class="carousel-item active" *ngFor="let img of imagenes">
-            <img src={{img.url}} class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>{{img.titulo}}</h5>
-              <p>{{img.descripcion}}</p>
-            </div> 
-          </div> -->
+  <h2>Bienvenido a getADog :D</h2>
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500" *ngIf="imagenes.length > 1">
 
+        <div class="carousel-inner" >
           <div class="carousel-item active">
             <img src={{imagenes[3].url}} class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
@@ -59,7 +45,7 @@
           <span class="visually-hidden">Next</span>
         </button>
   </div>
-  <div *ngIf="imagenes.length < 1">
+  <div *ngIf="imagenes.length < 0">
     <h1>Bienvenido a getADog, por el momento no podemos cargar el carrusel :(</h1>
   </div>
     
