@@ -18,7 +18,13 @@ export class CartServiceService {
     if (!item) {
       this.__adoptList.push({... perro});
     }else{
-      this.__adoptList.pop();
+      let index: number;
+      for (const iterator of this.__adoptList) {
+        if(iterator.nombre == perro.nombre){
+          index = this.__adoptList.indexOf(iterator);
+          this.__adoptList.splice(index, 1);
+        }
+      }
     }
     
     this.carro.next(this.__adoptList);
