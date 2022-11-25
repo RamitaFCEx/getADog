@@ -26,7 +26,11 @@ export class CartServiceService {
         }
       }
     }
-    
     this.carro.next(this.__adoptList);
   }
+
+  clearCart(){
+    this.__adoptList.splice(0);
+  }
+
 }

@@ -1,32 +1,10 @@
-
-<table class="table table-striped table-dark table-bordered">
-    <thead>
-        <tr>
-            <td>Imagen</td>
-            <td>Nombre</td>
-            <td>Edad</td>
-            <td>AptoDepto</td>
-            <td>Disponible</td>
-            <td>Agregar</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let perro of perros">
-            <td><img class="perroDisp img-thumbnail" src={{perro.imagen}} alt="perro"></td>
-            <td>{{perro.nombre}}</td>
-            <td>{{perro.edad}}</td>
-            <td>
-                <span class="badge text-bg-success" *ngIf="perro.aptoDepto">Si!</span>
-                <span class="badge text-bg-warning" *ngIf="!perro.aptoDepto">No :(</span>
-            </td>
-            <td>
-                <span class="badge text-bg-success" *ngIf="perro.disponibilidad">Disponible</span>
-                <span class="badge text-bg-danger" *ngIf="!perro.disponibilidad">No disp</span>
-            </td>
-            <td>
-                <input type="checkbox" name="" id="" (click)="cambiarDisponibilidad(perro)" >
-            </td> 
-        </tr>
-    </tbody>
-</table>
-    
+<div class="contenedor-cards">
+    <div class="card" style="width: 18rem;" id={{perro.id}}  *ngFor="let perro of perros" (click)="cambiarDisponibilidad(perro)">
+        <img class="card-img-top" src={{perro.imagen}} alt="perro">
+        <div class="card-body">
+            <h5 class="card-title">{{perro.nombre}}</h5>
+            <p class="card-text">{{perro.edad}} añox </p> 
+            <p> recomendado para deptos? {{perro.aptoDepto}} </p>
+        </div>
+    <div>
+</div>

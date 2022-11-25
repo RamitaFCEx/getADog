@@ -1,21 +1,8 @@
-<table>
-    <thead>
-        <tr>
-            <td>Imagen</td>
-            <td>Nombre</td>
-            <td>Edad</td>
-            <td>AptoDepto</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let perro of perros">
-            <td><img class="perroDisp img-thumbnail" src={{perro.imagen}} alt="perro"></td>
-            <td>{{perro.nombre}}</td>
-            <td>{{perro.edad}}</td>
-            <td>
-                <span class="badge text-bg-success" *ngIf="perro.aptoDepto">Si!</span>
-                <span class="badge text-bg-warning" *ngIf="!perro.aptoDepto">No :(</span>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<div class="carro-contenedor">
+    <div>
+        <button *ngIf="perros.length > 0" class="btn btn-success">Adoptar!</button>
+    </div>
+    <div style="width: 18rem;" >
+        <img class="card-img-top" src={{perro.imagen}} alt="perro" *ngFor="let perro of perros">
+    <div>
+</div>

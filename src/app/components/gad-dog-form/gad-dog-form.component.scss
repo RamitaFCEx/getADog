@@ -1,0 +1,16 @@
+div.gad-dog-contenedor{
+    margin-top: 9vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 50px;
+    max-width: 25vw;
+    background-color: rgb(241, 231, 169);
+}

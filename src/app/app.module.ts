@@ -9,6 +9,7 @@ import { HomeComponent } from './components/gad-home/gad-home.component';
 import { GadShopComponent } from './components/gad-shop/gad-shop.component';
 import { GadCarroComponent } from './components/gad-carro/gad-carro.component';
 import { GadShopTableComponent } from './components/gad-shop-table/gad-shop-table.component';
+import { GadDogFormComponent } from './components/gad-dog-form/gad-dog-form.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GadShopTableComponent } from './components/gad-shop-table/gad-shop-tabl
     HomeComponent,
     GadShopComponent,
     GadCarroComponent,
-    GadShopTableComponent
+    GadShopTableComponent,
+    GadDogFormComponent
   ],
   imports: [
     BrowserModule,
