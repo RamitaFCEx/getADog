@@ -1,10 +1,23 @@
 <div class="contenedor-cards">
-    <div class="card" style="width: 18rem;" id={{perro.id}}  *ngFor="let perro of perros" (click)="cambiarDisponibilidad(perro)">
-        <img class="card-img-top" src={{perro.imagen}} alt="perro">
-        <div class="card-body">
-            <h5 class="card-title">{{perro.nombre}}</h5>
-            <p class="card-text">{{perro.edad}} añox </p> 
-            <p> recomendado para deptos? {{perro.aptoDepto}} </p>
+    <ng-container *ngFor="let perro of perros">
+        <div class="card" style="width: 18rem;" id={{perro.id}} (click)="cambiarDisponibilidad(perro)">
+            <img class="card-img-top" src={{perro.imagen}} alt="perro">
+            <div class="card-body">
+                <h5 class="card-title">{{perro.nombre}}</h5>
+                <p class="card-text">{{perro.edad}} años</p> 
+                <p> recomendado para deptos? {{perro.aptoDepto}} </p>
+            </div>
         </div>
-    <div>
+    </ng-container>
+
+    <ng-container *ngFor="let perro of perrosApi">
+        <div class="card" style="width: 18rem;" id={{perro.id}}  (click)="cambiarDisponibilidad(perro)">
+            <img class="card-img-top" src={{perro.imagen}} alt="perro">
+            <div class="card-body">
+                <h5 class="card-title">{{perro.nombre}}</h5>
+                <p class="card-text">{{perro.edad}} años</p> 
+                <p> recomendado para deptos? {{perro.aptoDepto}} </p>
+            </div>
+        </div>
+    </ng-container>
 </div>

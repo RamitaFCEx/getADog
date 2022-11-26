@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-
-import { perro } from '../components/gad-shop-table/perro';
+import { perro } from '../model/perro';
 
 @Injectable({
   providedIn: 'root'

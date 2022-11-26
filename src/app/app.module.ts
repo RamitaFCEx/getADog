@@ -10,6 +10,8 @@ import { GadShopComponent } from './components/gad-shop/gad-shop.component';
 import { GadCarroComponent } from './components/gad-carro/gad-carro.component';
 import { GadShopTableComponent } from './components/gad-shop-table/gad-shop-table.component';
 import { GadDogFormComponent } from './components/gad-dog-form/gad-dog-form.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { GadDogFormComponent } from './components/gad-dog-form/gad-dog-form.comp
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

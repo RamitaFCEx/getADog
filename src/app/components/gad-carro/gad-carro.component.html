@@ -1,6 +1,6 @@
 <div class="carro-contenedor">
     <div>
-        <button *ngIf="perros.length > 0" class="btn btn-success">Adoptar!</button>
+        <button *ngIf="perros.length > 0" class="btn btn-success" (click)="adoptar()">Adoptar!</button>
     </div>
     <div style="width: 18rem;" >
         <img class="card-img-top" src={{perro.imagen}} alt="perro" *ngFor="let perro of perros">

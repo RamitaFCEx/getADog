@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { DogsApiService } from 'src/app/services/dogs-api.service';
+import { perro } from '../../model/perro';
+import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'gad-dog-form',
@@ -7,11 +11,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GadDogFormComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private dogsApi: DogsApiService,
+              private router: Router) { }
+
 
   ngOnInit(): void {
   }
 
+  
+
+  onSubmit(){
+  }
   
 
 }
