@@ -4,7 +4,7 @@
       <div id="logoGetADog">
         <img src="https://stackblitz.com/files/angular-ivy-wvdecs/github/RamitaFCEx/getADog/main/src/favicon.ico" alt="Logo-getADog" >
       </div>
-      <a class="navbar-brand" [routerLink]="['/home']">{{title}}</a>
+      <a class="navbar-brand" [routerLink]="['/home']" (click)="navegar('home')">{{title}}</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
