@@ -26,7 +26,7 @@ export class GadDogFormComponent implements OnInit {
     this.form = new FormGroup({
       nombre: new FormControl('', [Validators.required]),
       edad: new FormControl('', [Validators.required]),
-      aptoDepto: new FormControl('', [Validators.required]),
+      aptoDepto: new FormControl(''),
     });
   }
 

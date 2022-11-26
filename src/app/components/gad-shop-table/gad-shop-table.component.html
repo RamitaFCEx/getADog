@@ -1,5 +1,6 @@
 <div class="contenedor-cards">
-    <ng-container *ngFor="let perro of perros">
+    <!-- PRUEBA MOCKDATA -->
+    <!-- <ng-container *ngFor="let perro of perros">
         <div class="card" style="width: 18rem;" id={{perro.id}} (click)="cambiarDisponibilidad(perro)">
             <img class="card-img-top" src={{perro.imagen}} alt="perro">
             <div class="card-body">
@@ -8,7 +9,7 @@
                 <p> recomendado para deptos? {{perro.aptoDepto}} </p>
             </div>
         </div>
-    </ng-container>
+    </ng-container> -->
 
     <ng-container *ngFor="let perro of perrosApi">
         <div class="card" style="width: 18rem;" id={{perro.id}}  (click)="cambiarDisponibilidad(perro)">
