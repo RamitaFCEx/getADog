@@ -29,6 +29,7 @@ export class CartServiceService {
   }
 
   clearCart(){
+    console.log("Vaciar carro");
     this.__adoptList.splice(0);
   }
 

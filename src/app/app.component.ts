@@ -8,11 +8,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'getADog';
 
-  navegar(seccion: String){
-    document.querySelectorAll(".nav-link").forEach(elemento => {
-      elemento.classList.remove("actual");
-    });
-    document.querySelector("#"+seccion)?.classList.add("actual");
-  }
-
 }

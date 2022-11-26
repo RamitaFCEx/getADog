@@ -1,18 +1,15 @@
 <div class="gad-dog-contenedor">
     <h3>¿Queres dar un perro en adopcion?</h3>
-    <form action="" (ngSubmit)="onSubmit()" id="formulario">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre">
 
-        <label for="edad">Edad:</label>
-        <input type="number" min="0" name="edad">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <input matInput type="text" placeholder="Nombre" formControlName="nombre" required>
 
-        <div>
-            <label for="aptoDepto">¿Apto para departamentos?</label>
-            <input type="checkbox" name="aptoDepto" id="">
-        </div>
-
-        <button >Enviar</button>
-        
-    </form>
+          <label for="aptoDepto">Apto para departamentos?
+          <input matInput type="checkbox" formControlName="aptoDepto">
+            </label>
+    
+          <input matInput type="number" placeholder="Edad" formControlName="edad" required>
+    
+        <button type="submit" mat-raised-button color="primary" [disabled]="form.invalid">Update</button>
+      </form>
 </div> 

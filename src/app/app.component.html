@@ -4,14 +4,14 @@
       <div id="logoGetADog">
         <img src="https://stackblitz.com/files/angular-ivy-wvdecs/github/RamitaFCEx/getADog/main/src/favicon.ico" alt="Logo-getADog" >
       </div>
-      <a class="navbar-brand" [routerLink]="['/home']" (click)="navegar('home')">{{title}}</a>
+      <a class="navbar-brand" [routerLink]="['/home']">{{title}}</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a id="home" class="nav-link active actual" aria-current="page" [routerLink]="['/home']" (click)="navegar('home')">Home</a>
-          <a id="shop" class="nav-link active" [routerLink]="['/shop']" (click)="navegar('shop')">Shop</a>
+          <a id="home" class="nav-link active" aria-current="page" [routerLink]="['/home']">Home</a>
+          <a id="shop" class="nav-link active" [routerLink]="['/shop']" >Shop</a>
         </div>
       </div>
     </div>
