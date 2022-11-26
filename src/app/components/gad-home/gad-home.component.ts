@@ -9,22 +9,22 @@ export class HomeComponent implements OnInit {
 
   imagenes: homeImg[] = [
     {
-      url: "./assets/img/dog4.jpg",
+      url: "../../../assets/img/dog4.jpg",
       titulo: "TEXTO IMG4",
       descripcion: "Descripcion IMG4"
     },
     {
-      url: "./assets/img/dog3.jpg",
+      url: "../../../assets/img/dog3.jpg",
       titulo: "TEXTO IMG3",
       descripcion: "Descripcion IMG3"
     },
     {
-      url: "./assets/img/dog2.jpg",
+      url: "../../../assets/img/dog2.jpg",
       titulo: "TEXTO IMG2",
       descripcion: "Descripcion IMG2"
     },
     {
-      url: "./assets/img/dog.jpg",
+      url: "../../../assets/img/dog.jpg",
       titulo: "TEXTO IMG1",
       descripcion: "Descripcion IMG1"
     }
