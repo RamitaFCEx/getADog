@@ -10,8 +10,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" [routerLink]="['/home']">Home</a>
-          <a class="nav-link" [routerLink]="['/shop']">Shop</a>
+          <a id="home" class="nav-link active actual" aria-current="page" [routerLink]="['/home']" (click)="navegar('home')">Home</a>
+          <a id="shop" class="nav-link active" [routerLink]="['/shop']" (click)="navegar('shop')">Shop</a>
         </div>
       </div>
     </div>
