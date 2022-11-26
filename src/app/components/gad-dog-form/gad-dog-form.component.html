@@ -8,8 +8,8 @@
           <input matInput type="checkbox" formControlName="aptoDepto">
           </label>
     
-          <input matInput type="number" placeholder="Edad" formControlName="edad" required>
+          <input matInput type="number" placeholder="Edad" formControlName="edad" required min="0">
     
-        <button type="submit" mat-raised-button color="primary" [disabled]="form.invalid">Update</button>
+        <button type="submit" mat-raised-button color="primary" [disabled]="form.invalid">Agregar</button>
       </form>
 </div> 
