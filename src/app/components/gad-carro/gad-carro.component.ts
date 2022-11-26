@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CartServiceService } from '../../services/cart-service.service';
 import { perro } from '../../model/perro';
-import { DogsApiService } from 'src/app/services/dogs-api.service';
+import { DogsApiService } from '../../services/dogs-api.service';
+
 
 @Component({
   selector: 'gad-carro',
