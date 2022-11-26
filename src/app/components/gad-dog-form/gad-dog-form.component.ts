@@ -1,4 +1,4 @@
-import { DogsApiService } from 'src/app/services/dogs-api.service';
+import { DogsApiService } from '../../services/dogs-api.service';
 import { perro } from '../../model/perro';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
