@@ -22,3 +22,19 @@
 .contenedor-cards > div{
     max-width: 32%;
 }
+
+span{
+    display: block;
+    text-align: center;
+    border-radius:15px;
+    
+}
+
+.aptoDepto{
+    background-color: lightgreen;
+    border: 3px solid rgb(27, 167, 51);
+}
+.noAptoDepto{
+    background-color: lightcoral;
+    border: 3px solid rgb(167, 27, 34);
+}

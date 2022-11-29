@@ -2,7 +2,8 @@
     <div>
         <button *ngIf="perros.length > 0" class="btn btn-success" (click)="adoptar()">Adoptar!</button>
     </div>
-    <div style="width: 18rem;" >
-        <img class="card-img-top" src={{perro.imagen}} alt="perro" *ngFor="let perro of perros">
+    <div style="width: 9rem;" class="perroSelec" *ngFor="let perro of perros">
+        <img class="card-img-top" src={{perro.imagen}} alt="perro" >
+        <h4>{{perro.nombre}}</h4>
     <div>
 </div>

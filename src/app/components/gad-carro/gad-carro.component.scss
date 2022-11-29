@@ -2,8 +2,9 @@ div.carro-contenedor > div{
     margin-top: 10px;
 }
 
-div.carro-contenedor div > img{
+div.carro-contenedor div.perroSelec {
     margin-top: 10px;
     border-radius: 6px;
     border: 4px solid rgb(2, 197, 2);
+    text-align: center;
 }

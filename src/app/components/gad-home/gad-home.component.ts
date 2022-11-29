@@ -3,39 +3,36 @@ import { homeImg } from './homeImg';
 @Component({
   selector: 'gad-home',
   templateUrl: './gad-home.component.html',
-  styleUrls: ['./gad-home.component.css']
+  styleUrls: ['./gad-home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  urlStackblitz : String = "https://stackblitz.com/files/angular-ivy-wvdecs/github/RamitaFCEx/getADog/main/src/assets/img/";
-  
+  urlStackblitz: String =
+    'https://stackblitz.com/files/angular-ivy-wvdecs/github/RamitaFCEx/getADog/main/src/assets/img/';
+
   imagenes: homeImg[] = [
     {
-      url: this.urlStackblitz + "dog4.jpg",
-      titulo: "TEXTO IMG4",
-      descripcion: "Descripcion IMG4"
+      url: this.urlStackblitz + 'dog4.jpg',
+      titulo: 'Mejor Alimento Balanceado',
+      descripcion: '-Premio DogChow 2022',
     },
     {
-      url: this.urlStackblitz + "dog3.jpg",
-      titulo: "TEXTO IMG3",
-      descripcion: "Descripcion IMG3"
+      url: this.urlStackblitz + 'dog3.jpg',
+      titulo: 'Mejor Shampoo Artesanal',
+      descripcion: '-Premio UE 2020',
     },
     {
-      url: this.urlStackblitz + "dog2.jpg",
-      titulo: "TEXTO IMG2",
-      descripcion: "Descripcion IMG2"
+      url: this.urlStackblitz + 'dog2.jpg',
+      titulo: 'Mejores Entrenadores',
+      descripcion: '-Premio FIFA 2021',
     },
     {
-      url: this.urlStackblitz + "dog.jpg",
-      titulo: "TEXTO IMG1",
-      descripcion: "Descripcion IMG1"
-    }
-  ]
+      url: this.urlStackblitz + 'dog.jpg',
+      titulo: 'Premio a la Responsabilidad',
+      descripcion: '-Revista TIME 2022',
+    },
+  ];
 
-  
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
