@@ -9,7 +9,6 @@ export class CartServiceService {
 
   private __adoptList: perro[] = [];
   carro: BehaviorSubject<perro[]> = new BehaviorSubject(this.__adoptList);
-  //public alCarro: Observable<perro[]> = this.carro.asObservable();
   constructor() { }
 
   addToCart(perro: perro){
@@ -29,7 +28,6 @@ export class CartServiceService {
   }
 
   clearCart(){
-    console.log("Vaciar carro");
     this.__adoptList.splice(0);
   }
 

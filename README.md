@@ -1,27 +1,39 @@
 # GetADog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+Creado por Ramiro Meza.
+getADog es una plataforma que permite adoptar o dar en adopcion perros de manera rapida y sencilla.
 
-## Development server
+# Seccion Home
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+El componente gad-home tiene un carrusel que obtiene informacion de un arreglo de objetos precargado, no usa ngFor porque rompia el carrusel de bootstrap.
+Tiene un ngIf en caso de que ocurra un error y no se encuentre la informacion del carrusel.
 
-## Code scaffolding
+# Seccion Shop
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Utiliza tres componentes:
+~gad-shop-table.
+~gad-carro.
+~gad-dog-form.
 
-## Build
+# gad-shop-table
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Utiliza los servicios DogsApiService y CartServiceService.
+Imprime en pantalla todos los perros que estan guardados en la API (utilizando un *ngFor y dos *ngIf).
 
-## Running unit tests
+# gad-carro
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Muestra todos los perros seleccionados (creado con *ngFor) de la gad-shop-table mediante CartServiceService.
+Permite adoptar los perros seleccionados mediante el boton "Adoptar!" (creado con *ngIf), borrando de la API dichos perros mediante DogsApiService.
 
-## Running end-to-end tests
+# gad-dog-form
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Crea el formulario que permite añadir perros a la API, utilizando el DogsApiService.
 
-## Further help
+# DogsApiService
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+DogsApiService: obtiene la informacion de los perros cargados en la API. Borra de la API los perros que fueron seleccionados y adoptados por el usuario. Agrega a la API los perros que son cargados por el gad-dog-form.
+
+# CartServiceService
+
+CartServiceService: agrega al carro los perros que son seleccionados por el usuario. Borra del carro cualquier perro seleccionado cuando el usuario entra en la seccion shop.
+

@@ -15,7 +15,7 @@ export class GadDogFormComponent implements OnInit {
   @Input()
   form: FormGroup | any;
   constructor(private dogsApi: DogsApiService,
-              private router: Router) { }
+              ) { }
 
 
   ngOnInit(): void {
