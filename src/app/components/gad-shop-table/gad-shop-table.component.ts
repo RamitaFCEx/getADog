@@ -27,7 +27,7 @@ export class GadShopTableComponent implements OnInit {
 
   cambiarDisponibilidad(perro : perro){
     this.cart.addToCart(perro);
-    document.getElementById(perro.id.toString())?.classList.toggle("seleccionado");
+    //document.getElementById(perro.id.toString())?.classList.toggle("seleccionado");
   }
 
   

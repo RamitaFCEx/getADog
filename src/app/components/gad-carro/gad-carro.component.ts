@@ -21,7 +21,6 @@ export class GadCarroComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.cart.clearCart();
   }
 
   adoptar(){
